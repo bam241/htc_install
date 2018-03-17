@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $isntall_dir
+cd $install_dir
 ln -s root-6.10.08 root
 cd root
 mkdir src
