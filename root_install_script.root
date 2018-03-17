@@ -5,6 +5,7 @@ ln -s root-6.10.08 root
 cd root
 mkdir src
 mv * src
+mv src/root_install* ./
 mkdir bld
 cd bld
 cmake_string=
