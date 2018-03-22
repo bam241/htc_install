@@ -1,11 +1,6 @@
 #!/bin/bash
 
-cd $install_dir
-ln -s root-6.10.08 root
-cd root
-mkdir src
-mv * src
-mv src/root_install* ./
+cd $install_dir/root
 mkdir bld
 cd bld
 cmake_string=
@@ -15,5 +10,5 @@ cmake_string+=" "-DCMAKE_INSTALL_PREFIX=$install_dir/root
 
 
 cmake ../src $cmake_string
-make -j $jobs
+make
 make install
