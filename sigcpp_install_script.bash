@@ -9,7 +9,7 @@ folder=$name-$version
 folder_=$name_-$version
 tar_f=$name_-$version
 tarball=lib${name_}-$version.tar.xz
-url=https://download.gnome.org/sources/lib$name_/${versioni::2}/$tarball
+url=https://download.gnome.org/sources/lib$name_/${version::2}/$tarball
 
 mkdir $install_dir/$folder
 cd $install_dir
