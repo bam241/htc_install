@@ -4,7 +4,7 @@ export hdf5_version=1.8.13
 
 name=hdf5
 version=$hdf5_version
-folder=$name-$version
+folder=$name_$version
 tarball=$name-$version.tar.gz
 tar_f=$name-$version
 url=https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-${version::3}/hdf5-$version/src/$tarball
