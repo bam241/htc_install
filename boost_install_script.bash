@@ -17,11 +17,13 @@ cd $install_dir/boost
 wget https://sourceforge.net/projects/boost/files/boost/$version/$tarball
 tar -xvf $tarball
 
+mv $tar_f src
+
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
 setup_string+=" "--with-libraries=program_options,filesystem,system,serialization,regex
 
-cd ${tarball:0:12}
+cd src
 ./bootstrap.sh  --show-libraries
 ./bootstrap.sh $setup_string
 ./b2 install
