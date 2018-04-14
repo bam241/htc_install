@@ -8,7 +8,7 @@ folder=$name-$version
 tarball=$name-$version.tar.gz
 tar_f=$name-$version
 url=https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-${version::-3}/hdf5-$version/src/$tarball
-
+echo $url
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
