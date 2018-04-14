@@ -20,7 +20,7 @@ mv $tar_f src
 
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
-setup_string+=" "PKG_CONFIG_PATH=$install_dir/pcre/lib/pkgconfig
+setup_string+=" "PKG_CONFIG_PATH=$install_dir/pcre/lib/pkgconfig":"$install_dir/libffi/lib/pkgconfig
 
 cd src 
 ./configure $setup_string

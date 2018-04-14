@@ -22,6 +22,7 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH
 PKG_CONFIG_PATH+=":"$install_dir/sigcpp/lib/pkgconfig
 PKG_CONFIG_PATH+=":"$install_dir/glib/lib/pkgconfig
 PKG_CONFIG_PATH+=":"$install_dir/pcre/lib/pkgconfig
+PKG_CONFIG_PATH+=":"$install_dir/libffi/lib/pkgconfig
 
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
