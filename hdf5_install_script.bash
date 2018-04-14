@@ -15,7 +15,6 @@ ln -s $folder $name
 cd $install_dir/$folder
 
 wget $url
-pwd
 tar -xvf $tarball
 mv $tar_f src
 mkdir bld

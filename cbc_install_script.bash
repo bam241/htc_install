@@ -17,12 +17,11 @@ cd $install_dir/$folder
 wget $url
 tar -xvf $tarball
 mv $tar_f src
-mkdir bld
 
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
 
-cd $name-$version
+cd src
 ./configure $setup_string
 make -j $jobs
 make install
