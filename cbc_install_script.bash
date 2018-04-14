@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export Cbc_version=2.9.8
+export cbc_version=2.9.8
 
 name=Cbc
 version=$cbc_version
