@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export glib_version=2.48.2
+
 name=glib
 version=$glib_version
 folder=$name-$version
