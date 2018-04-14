@@ -1,13 +1,13 @@
 #!/bin/bash
 
-python_version=2.7.11
+export mpfr_version=3.1.4
 
-name=python
-version=$python_version
+name=mpfr
+version=$mpfr_version
 folder=$name-$version
-tarball=Python-$version.tgz
-tar_f=Python-$version
-url=https://www.python.org/ftp/python/$version/$tarball
+tarball=$name-$version.tar.gz
+tar_f=$name-$version
+url=http://www.mpfr.org/mpfr-current/$tarball
 
 mkdir $install_dir/$folder
 cd $install_dir
@@ -20,11 +20,10 @@ mv $tar_f src
 mkdir bld
 
 config_string=
-config_string+=" "--enable-shared
+config_string+=" "--with-gmp=$install_dir/gmp
 config_string+=" "--prefix=$install_dir/$folder
 
 cd bld
 ../src/configure $config_string
 make -j $jobs
 make install
-

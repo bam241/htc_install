@@ -1,13 +1,12 @@
 #!/bin/bash
+export mpc_version=1.0.3
 
-python_version=2.7.11
-
-name=python
-version=$python_version
+name=mpc
+version=$mpc_version
 folder=$name-$version
-tarball=Python-$version.tgz
-tar_f=Python-$version
-url=https://www.python.org/ftp/python/$version/$tarball
+tarball=$name-$version.tar.gz
+tar_f=$name-$version
+url=ftp://ftp.gnu.org/gnu/mpc/$tarball
 
 mkdir $install_dir/$folder
 cd $install_dir
@@ -20,11 +19,11 @@ mv $tar_f src
 mkdir bld
 
 config_string=
-config_string+=" "--enable-shared
+config_string+=" "--with-gmp=$install_dir/gmp
+config_string+=" "--with-mpfr=$install_dir/mpfr
 config_string+=" "--prefix=$install_dir/$folder
 
 cd bld
 ../src/configure $config_string
 make -j $jobs
 make install
-
