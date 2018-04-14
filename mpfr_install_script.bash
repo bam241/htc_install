@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export mpfr_version=3.1.4
+export mpfr_version=4.0.1
 
 name=mpfr
 version=$mpfr_version
