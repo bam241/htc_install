@@ -1,13 +1,14 @@
 #!/bin/bash
 
-export libfii_version=3.2.1
+export libffi_version=3.2.1
 
-name=libfii
-version=$libfii_version
+name=libffi
+version=$libffi_version
 folder=$name-$version
 tar_f=$name-$version
 tarball=${name}-$version.tar.gz
 url=ftp://sourceware.org/pub/$name/$tarball
+
 
 mkdir $install_dir/$folder
 cd $install_dir
