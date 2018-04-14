@@ -22,6 +22,7 @@ config_string=
 config_string+=" "--enable-shared
 config_string+=" "--prefix=$install_dir/$folder
 
+mkdir bld
 cd bld
 ../src/configure $config_string
 make -j $jobs
