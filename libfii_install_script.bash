@@ -3,7 +3,7 @@
 export libfii_version=3.2.1
 
 name=libfii
-version=$libffii_version
+version=$libfii_version
 folder=$name-$version
 tar_f=$name-$version
 tarball=${name}-$version.tar.gz
