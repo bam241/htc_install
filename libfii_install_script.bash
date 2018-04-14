@@ -7,7 +7,7 @@ version=$libfii_version
 folder=$name-$version
 tar_f=$name-$version
 tarball=${name}-$version.tar.gz
-url=iftp://sourceware.org/pub/$name/$tarball
+url=ftp://sourceware.org/pub/$name/$tarball
 
 mkdir $install_dir/$folder
 cd $install_dir
