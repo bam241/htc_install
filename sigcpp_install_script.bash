@@ -11,6 +11,8 @@ tar_f=$name_-$version
 tarball=lib${name_}-$version.tar.xz
 url=https://download.gnome.org/sources/lib$name_/${version::3}/$tarball
 
+rm -rf $install_dir/$folder
+rm -rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
