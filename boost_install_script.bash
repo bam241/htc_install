@@ -1,6 +1,7 @@
 #!/bin/bash
 
 boost_version=1.61.0
+
 name=boost
 version=$boost_version
 folder=$name-$version
@@ -8,14 +9,22 @@ tar_f=$name-$version
 
 tarball=${name}_$version
 tarball=`echo $tarball | sed s/'\.'/_/g`
-untar_f=$tarball
+tar_f=$tarball
 tarball+=.tar.gz
+url=https://sourceforge.net/projects/boost/files/boost/$version/$tarball
 
-mkdir $install_dir/boost
-cd $install_dir/boost
+rm -rf $install_dir/$name
+rm -rf $install_dir/$folder
+mkdir $install_dir/$folder
+cd $install_dir
+ln -s $folder $name
+cd $install_dir/$folder
 
-wget https://sourceforge.net/projects/boost/files/boost/$version/$tarball
+wget $url
 tar -xvf $tarball
+mv $tar_f src
+mkdir bld
+
 
 mv $tar_f src
 
