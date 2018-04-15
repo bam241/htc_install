@@ -20,7 +20,7 @@ wget $url
 tar -xJvf $tarball
 mv $tar_f src
 
-echo $LD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
 
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
