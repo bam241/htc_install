@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export xmlpp_version=2.40.1
+
 name=xmlpp
 name_=xml++
 version=$xmlpp_version
@@ -9,6 +11,8 @@ tar_f=lib$name_-$version
 tarball=lib${name_}-$version.tar.xz
 url=http://ftp.gnome.org/pub/GNOME/sources/lib$name_/${xmlpp_version:0:4}/$tarball
 
+rm - rf $install_dir/$folder
+rm - rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
