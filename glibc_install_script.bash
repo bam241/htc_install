@@ -34,5 +34,5 @@ cd src
 mkdir autoconf
 cd autoconf
 ../configure $setup_string
-make -j $jobs
+make
 make install
