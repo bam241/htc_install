@@ -9,6 +9,8 @@ tar_f=$name-$version
 tarball=${name}-$version.tgz
 url=http://www.coin-or.org/download/source/$name/$tarball
 
+rm -rf $install_dir/$folder
+rm -rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
