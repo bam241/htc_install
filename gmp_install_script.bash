@@ -9,6 +9,7 @@ tarball=$name-$version.tar.bz2
 tar_f=$name-$version
 url=https://gmplib.org/download/gmp/$tarball
 
+rm -rf $install_dir/$folder
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
