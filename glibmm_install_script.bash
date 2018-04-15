@@ -10,6 +10,7 @@ tarball=${name}-$version.tar.xz
 url=http://ftp.gnome.org/pub/GNOME/sources/$name/${version: : ${#version}-2}/$tarball
 
 rm -rf $install_dir/$folder
+rm -rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
