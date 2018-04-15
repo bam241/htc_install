@@ -7,6 +7,8 @@ tar_f=lib$name-$version
 tarball=lib${name}-$version.tar.gz
 url=ftp://xmlsoft.org/libxml2/$tarball
 
+rm -rf $install_dir/$folder
+rm -rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
