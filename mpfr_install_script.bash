@@ -9,6 +9,7 @@ tarball=$name-$version.tar.gz
 tar_f=$name-$version
 url=http://www.mpfr.org/mpfr-current/$tarball
 
+rm -rf $install_dir/$folder
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
