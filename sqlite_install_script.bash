@@ -9,6 +9,8 @@ tar_f=$name-$version
 tarball=$name-autoconf-$version.tar.gz
 url=https://www.sqlite.org/2016/$tarball
 
+rm -rf $install_dir/$folder
+rm -rf $install_dir/$name
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
