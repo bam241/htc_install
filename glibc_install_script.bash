@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export glibc_version=2.14
+export glibc_version=2.18
 
 name=glibc
 version=$glibc_version
@@ -26,8 +26,8 @@ setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
 
 cd src
-mkdir autoconf
-cd autoconf
+mkdir bld
+cd bld
 ../configure $setup_string
 make -j $jobs
 make install
