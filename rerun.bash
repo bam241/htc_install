@@ -10,4 +10,6 @@
 ./sqlite_install_script.bash
 ./libfi_install_script.bash
 ./glib_install_script.bash
-
+cd $install_dir
+tar -czvf new_install.tar.gz *
+mv new_install.tar.gx $home/
