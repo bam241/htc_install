@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd $install_dir/cylus
+
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH
 PKG_CONFIG_PATH+=":"$install_dir/sigcpp/lib/pkgconfig
