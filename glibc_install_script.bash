@@ -25,7 +25,7 @@ unset LD_LIBRARY_PATH
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
 
-cd $name-$version
+cd src
 mkdir autoconf
 cd autoconf
 ../configure $setup_string
