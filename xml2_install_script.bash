@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export xml2_version=2.9.4
+
 name=xml2
 version=$xml2_version
 folder=$name-$version
