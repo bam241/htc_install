@@ -27,8 +27,8 @@ setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
 
 cd src
-mkdir bld
-cd bld
+mkdir autoconf
+cd autoconf
 ../configure $setup_string
 make -j $jobs
 make install
