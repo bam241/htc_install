@@ -20,7 +20,7 @@ wget $url
 tar -xJvf $tarball
 mv $tar_f src
 
-unset LD_LIBRARY_PATH
+#unset LD_LIBRARY_PATH
 #echo $LD_LIBRARY_PATH
 
 setup_string=
