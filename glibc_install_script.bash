@@ -17,7 +17,7 @@ ln -s $folder $name
 cd $install_dir/$folder
 
 wget $url
-tar -xvf $tarball
+tar -xJvf $tarball
 mv $tar_f src
 
 unset LD_LIBRARY_PATH
