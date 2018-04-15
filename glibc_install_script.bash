@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export glibc_version=2.18
+export glibc_version=2.20
 
 name=glibc
 version=$glibc_version
@@ -19,6 +19,10 @@ cd $install_dir/$folder
 wget $url
 tar -xJvf $tarball
 mv $tar_f src
+
+#working LD_LIB
+#/tmp/mouginot/opt/pcre/lib:/tmp/mouginot/opt/sigc++/lib:/tmp/mouginot/opt/boost/lib:/tmp/mouginot/opt/lapack/lib:/tmp/mouginot/opt/hdf5/lib:/tmp/mouginot/opt/python/lib:/tmp/mouginot/opt/cmake/lib:/tmp/mouginot/opt/gcc/lib64:/tmp/mouginot/opt/gcc/lib:/tmp/mouginot/opt/mpc/lib:/tmp/mouginot/opt/mpfr/lib:/tmp/mouginot/opt/gmp/lib/
+
 
 #unset LD_LIBRARY_PATH
 #echo $LD_LIBRARY_PATH
