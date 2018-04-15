@@ -9,6 +9,7 @@ tarball=Python-$version.tgz
 tar_f=Python-$version
 url=https://www.python.org/ftp/python/$version/$tarball
 
+rm $install_dir/$folder
 mkdir $install_dir/$folder
 cd $install_dir
 ln -s $folder $name
