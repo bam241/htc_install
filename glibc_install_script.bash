@@ -21,6 +21,7 @@ tar -xJvf $tarball
 mv $tar_f src
 
 unset LD_LIBRARY_PATH
+echo $LD_LIBRARY_PATH
 
 setup_string=
 setup_string+=" "--prefix=$install_dir/$folder
