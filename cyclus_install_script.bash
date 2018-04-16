@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd $install_dir/cylus
+cd $install_dir/cyclus
 
 
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH
