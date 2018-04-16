@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $install_dir/cycamore
 
 export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH
 CMAKE_PREFIX_PATH+=":"$install_dir/sigcpp
