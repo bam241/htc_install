@@ -1,6 +1,8 @@
 #!/bin/bash
 
 
+cd $install_dir/cyclass
+
 export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH
 CMAKE_PREFIX_PATH+=":"$install_dir/sigcpp
 CMAKE_PREFIX_PATH+=":"$install_dir/glib 
