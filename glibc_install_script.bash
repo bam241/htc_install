@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export glibc_version=2.21
+export glibc_version=2.14
 
 name=glibc
 version=$glibc_version
